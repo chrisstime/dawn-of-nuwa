@@ -1,4 +1,4 @@
-# 2. Odd or even exercise
+# 2. Odd or even and divisors exercise
 
 print(
     "Hello there! I am the magic number machine."
@@ -24,7 +24,7 @@ def odd_or_even(selected_number: int):
 
 
 def get_divisors(selected_number: int):
-    divisors = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    divisors = range(2, 11)
     value_is_a_multiple_of = list()
     for divisor in divisors:
         if selected_number % divisor == 0:
@@ -39,6 +39,6 @@ def get_divisors(selected_number: int):
 selected_number = validate_input_number(question='What number did you have in mind? ')
 print('Excellent number choice my dude!')
 print('I have some interesting facts for you:')
-print('- ' + str(selected_number) + ' is an ' + odd_or_even(selected_number) + ' number')
-print('- it is also a ' + get_divisors(selected_number))
+print(f'- {selected_number} is an {odd_or_even(selected_number)} number')
+print(f'- it is also a {get_divisors(selected_number)}')
 print('Ta-dah! Magikk *popping noises*')

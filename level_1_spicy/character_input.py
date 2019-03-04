@@ -25,5 +25,5 @@ age_year_2050 = 2050 - int(current_year) + int(age)
 
 country = input('Which country are you from? ')
 
-print('Hi, ' + name + "! You're " + age + " years old and are from " + country + ". Cool!")
-print("That means in 2050 you'll be " + str(age_year_2050) + " years old.")
+print(f"Hi, {name}! You're {age} years old and are from {country}. Cool!")
+print(f"That means in 2050 you'll be {age_year_2050} years old.")
