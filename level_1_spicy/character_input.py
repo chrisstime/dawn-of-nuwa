@@ -2,8 +2,7 @@
 
 
 # Method to check to user is providing a positive number only for number related inputs.
-def number_input_for(question, error_message):
-
+def number_input_for(question: str, error_message: str):
     while True:
         answer = input(question)
         if answer.isdigit():
