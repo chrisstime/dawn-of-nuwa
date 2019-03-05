@@ -5,10 +5,11 @@ list_of_misfits = list()
 
 def validate_second_menu_input(question: str):
     user_input = input(question)
-    if user_input.isdigit():
-        return int(user_input)
-    else:
-        print("That's not an option my dude, please try again :)")
+    while True:
+        if user_input.isdigit():
+            return int(user_input)
+        else:
+            print("That's not an option my dude, please try again :)")
 
 
 def add_misfit():
