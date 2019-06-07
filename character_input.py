@@ -14,12 +14,13 @@ def number_input_for(question: str, error_message: str):
 name = input('What is your name? ')
 
 age_question = 'How old are you? '
-age_error_message = "Please enter a number. Number must also be more than 0 because babies can't type."
+age_error_message = "Please enter a number. Number must also be more than 0."
 age = number_input_for(question=age_question, error_message=age_error_message)
 
 current_year_question = 'What year is it now? '
 current_year_error_message = "Don't be silly, the current year must be positive, like me!"
-current_year = number_input_for(question=current_year_question, error_message=current_year_error_message)
+current_year = number_input_for(question=current_year_question, 
+                                error_message=current_year_error_message)
 age_year_2050 = 2050 - int(current_year) + int(age)
 
 
